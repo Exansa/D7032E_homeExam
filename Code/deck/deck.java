@@ -1,14 +1,14 @@
 package Code.deck;
 
+import java.util.ArrayList;
 import java.util.Collections;
 
 public class deck {
-    private Cards cards[];
+    private ArrayList<Cards> deck = new ArrayList<Cards>();
 
     public void createDeck(int players){
         if (players < 5) {
             this.cards = new Cards[];
-
             }
         } else{
             this.cards = new Cards[];

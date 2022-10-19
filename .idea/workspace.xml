@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5853267d-58ee-4a22-8616-327b8a7916f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/network/networkClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/network/networkClient_start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/baseCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/baseCards.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,8 @@
       <updated>1665297381511</updated>
       <workItem from="1665297382886" duration="118000" />
       <workItem from="1665321859229" duration="769000" />
-      <workItem from="1665399488335" duration="7379000" />
+      <workItem from="1665399488335" duration="14683000" />
+      <workItem from="1666107858787" duration="8651000" />
     </task>
     <servers />
   </component>
