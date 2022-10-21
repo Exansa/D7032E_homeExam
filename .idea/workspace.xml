@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5853267d-58ee-4a22-8616-327b8a7916f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/english/Cards/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/english/Cards/base/favorCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/english/Cards/base/nopeCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/english/Cards/base/shuffleCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/english/Cards/card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/english/Cards/parseJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/logic/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/logic/winning.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/winning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/network/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/network/server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/english/Cards/baseCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/baseCards.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,18 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/magnu/Desktop/D7032E_homeExam&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/magnu/Desktop/D7032E_homeExam",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +77,8 @@
       <workItem from="1665297382886" duration="118000" />
       <workItem from="1665321859229" duration="769000" />
       <workItem from="1665399488335" duration="14683000" />
-      <workItem from="1666107858787" duration="8651000" />
+      <workItem from="1666107858787" duration="43496000" />
+      <workItem from="1666341426716" duration="9517000" />
     </task>
     <servers />
   </component>

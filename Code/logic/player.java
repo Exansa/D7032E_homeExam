@@ -7,14 +7,30 @@ import java.util.ArrayList;
 
 public class player {
     private ArrayList<Hand> hand = new ArrayList<Hand>();
-    private boolean isAlive = true;
+    private boolean isAlive;
     private String name;
     private Socket connection;
     private BufferedReader inFromClient;
     private DataOutputStream outToClient;
 
     public player(String name){
+        this.name = name;
+        this.isAlive = true;
+        this.connection = null;
+        this.inFromClient = null;
+        this.outToClient = null;
 
+        Hand hand;
+    }
+
+    public String cardsToString() {
+        String returnString = "";
+        if (hand.size() == 0)
+            return "[NO CARDS]:";
+        for (int i = 0; i < hand.size(); i++) {
+            returnString += "\t[" + i + "] " + hand.get(i) + ":";
+        }
+        return returnString;
     }
 
     public void setName(String name){

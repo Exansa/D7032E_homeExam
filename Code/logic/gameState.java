@@ -39,5 +39,6 @@ public class gameState {
         for(int i = 0; i < players.size(); i++){
             Players currentPlayer = players.get(i);
         }
+        winning.hasWon();
     }
 }
