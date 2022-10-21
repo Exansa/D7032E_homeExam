@@ -1,7 +1,7 @@
 package Resources.english.Cards;
 
 public interface catCards {
-    public String getCatName();
+    public String getName();
 
-    public String getCatDescription();
+    public String getDescription();
 }

@@ -1,13 +1,13 @@
 package Resources.english.Cards.base;
 
-import Code.logic.gameState.*;
+import Code.logic.gameState;
 import Code.deck.deck;
 import Resources.english.Cards.card;
 
 public class SkipCard implements card{
     @Override
     public void play() {
-        deck.endTurn(false);
+        gameState.endTurn(false);
     }
 
     @Override

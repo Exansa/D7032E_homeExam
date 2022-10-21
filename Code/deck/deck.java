@@ -63,14 +63,15 @@ public class deck {
 
     }
 
-    public void pullCard(){
+    public static void drawCard(){
 
     }
 
-    public void displayCard(int nrOfCards){
-        for(int i = 0;i<nrOfCards;i++){
-            getCard();
-            System.out.println("The" + i + "card is");
+    public void displayHand (ArrayList<deck> cards){//Borde verkligen vara i menu eller i hand(ifall jag skapar hadn)
+        String temp = "";
+        for(int i = 0;i<hand.size();i++){
+            temp = hand.get(i).getName() + " ,";
+
         }
     }
 

@@ -5,12 +5,12 @@ import Resources.english.Cards.catCards;
 public class HairyPotatoCatCard implements catCards {
 
     @Override
-    public String getCatName() {
+    public String getName() {
         return "Hairy potato cat";
     }
 
     @Override
-    public String getCatDescription() {
+    public String getDescription() {
         return "Hairy yet delish! Can combo!";
     }
 }
