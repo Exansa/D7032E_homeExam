@@ -9,47 +9,54 @@ import java.util.Collections;
 public class deck {
 
     public static ArrayList<Card> deck = new ArrayList<Card>();
+    public boolean nope = false;
     // ArrayList<Deck> deck = new ArrayList<Deck>();
 
-    public deck(int players){
+    public deck(int playerAmount){
         String expansion = menu1.getExpansion();
 
         JSONObject cardAmounts = baseCards.baseDeck(players);
         if (expansion == "menu"){
-            for(int i = 0;0<cardAmounts.getInt("nope");i++){
-                this.deck.add(new nopeCard());}
+            for(int i = 0; 0<cardAmounts.getInt("nope");i++){
+                this.deck.add(new NopeCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("shuffle");i++){
-                this.deck.add(new shuffleCard());}
+            for(int i = 0; 0<cardAmounts.getInt("shuffle");i++){
+                this.deck.add(new ShuffleCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("seeTheFuture");i++){
-                this.deck.add(new seeTheFutureCard());}
+            for(int i = 0; 0<cardAmounts.getInt("seeTheFuture");i++){
+                this.deck.add(new SeeTheFutureCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("favor");i++){
-                this.deck.add(new favorCard());}
+            for(int i = 0; 0<cardAmounts.getInt("favor");i++){
+                this.deck.add(new FavorCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("hairypotato");i++){
-                this.deck.add(new hairyPotatoCard());}
+            for(int i = 0; 0<cardAmounts.getInt("hairypotato");i++){
+                this.deck.add(new HairyPotatoCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("catterMelon");i++){
-                this.deck.add(new catterMelonCard());}
+            for(int i = 0; 0<cardAmounts.getInt("catterMelon");i++){
+                this.deck.add(new CatterMelonCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("rainbow");i++){
-                this.deck.add(new rainbowCard());}
+            for(int i = 0; 0<cardAmounts.getInt("rainbow");i++){
+                this.deck.add(new RainbowCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("taco");i++){
-                this.deck.add(new tacoCard());}
+            for(int i = 0; 0<cardAmounts.getInt("taco");i++){
+                this.deck.add(new TacoCard());}
 
-            for(int i = 0;0<cardAmounts.getInt("bikini");i++){
-                this.deck.add(new bikiniCard());}
+            for(int i = 0; 0<cardAmounts.getInt("bikini");i++){
+                this.deck.add(new BikiniCard());}
+
+            for(int i = 0; 0<(6 - playerAmount); i++){
+                this.deck.add(new DefuseCard());}
+
+            for(int i = 0; 0<(playerAmount-1)){
+                this.deck.add(new ExplodeCard())};
 
         }
 
     }
 
+
     public void shuffleDeck(){
         Collections.shuffle(this.deck);
-
     }
 
     public void insertCard(int deckIndex){

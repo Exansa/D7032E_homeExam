@@ -1,6 +1,7 @@
 package Code.logic;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class gameState {
@@ -35,6 +36,24 @@ public class gameState {
         deck = new Deck(sendMessage);
     }
 
+    public void endTurn(boolean draw){
+        if(draw){
+            drawCard();
+            Collections.rotate(this.player, 1);
+            nextPlayer();
+        } else if (!draw){
+            nextPlayer();
+        }
+    }
+
+    private void nextPlayer(){
+        if(attack > 0){
+            this.currentPlayer = currentPlayer ;
+        } else{
+            Collections.rotate(players, -1);
+            this.currentPlayer = players(0);
+        }
+    }
     public void playerTurn(){
         for(int i = 0; i < players.size(); i++){
             Players currentPlayer = players.get(i);

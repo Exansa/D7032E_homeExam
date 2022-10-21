@@ -7,6 +7,8 @@ import java.util.ArrayList;
 public interface card {
     public void play();
 
-    void action(ArrayList<deck> deck);
-    //public void action();
+    public String getName();
+
+    public String getDescription();
+
 }
