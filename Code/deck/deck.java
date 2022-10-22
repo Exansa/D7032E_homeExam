@@ -8,7 +8,7 @@ import java.util.Collections;
 
 public class deck {
 
-    public static ArrayList<Card> deck = new ArrayList<Card>();
+    public static ArrayList<deck> cards = new ArrayList<deck>();
     public boolean nope = false;
     // ArrayList<Deck> deck = new ArrayList<Deck>();
 
@@ -18,37 +18,37 @@ public class deck {
         JSONObject cardAmounts = baseCards.baseDeck(players);
         if (expansion == "menu"){
             for(int i = 0; 0<cardAmounts.getInt("nope");i++){
-                this.deck.add(new NopeCard());}
+                this.cards.add(new NopeCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("shuffle");i++){
-                this.deck.add(new ShuffleCard());}
+                this.cards.add(new ShuffleCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("seeTheFuture");i++){
-                this.deck.add(new SeeTheFutureCard());}
+                this.cards.add(new SeeTheFutureCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("favor");i++){
-                this.deck.add(new FavorCard());}
+                this.cards.add(new FavorCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("hairypotato");i++){
-                this.deck.add(new HairyPotatoCard());}
+                this.cards.add(new HairyPotatoCatCard())}
 
             for(int i = 0; 0<cardAmounts.getInt("catterMelon");i++){
-                this.deck.add(new CatterMelonCard());}
+                this.cards.add(new CattermelonCatCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("rainbow");i++){
-                this.deck.add(new RainbowCard());}
+                this.cards.add(new RainbowCatCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("taco");i++){
-                this.deck.add(new TacoCard());}
+                this.cards.add(new TacoCatCard());}
 
             for(int i = 0; 0<cardAmounts.getInt("bikini");i++){
-                this.deck.add(new BikiniCard());}
+                this.cards.add(new BikiniCatCard());}
 
             for(int i = 0; 0<(6 - playerAmount); i++){
-                this.deck.add(new DefuseCard());}
+                this.cards.add(new DefuseCard());}
 
             for(int i = 0; 0<(playerAmount-1)){
-                this.deck.add(new ExplodeCard())};
+                this.cards.add(new ExplodeCard())};
 
         }
 

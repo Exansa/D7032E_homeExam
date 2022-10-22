@@ -51,6 +51,10 @@ public class gameState {
         endTurn(true);
     }
 
+    public void kill(ArrayList<Players> targetPlayer){
+        dead++;
+        this.player.setIsAlive(false);
+    }
     public void hasWon(){
         if(dead<=players.size()){
             for(int i = 0; i < players.size();i++){

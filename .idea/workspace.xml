@@ -8,14 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/logic/winning.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/SkipCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/catCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/catCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/D7032E_homeExam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/D7032E_homeExam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +46,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/magnu/Desktop/D7032E_homeExam",
+    "last_opened_file_path": "C:/Users/magnu/Desktop/json-20140107.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,7 +70,7 @@
       <workItem from="1665321859229" duration="769000" />
       <workItem from="1665399488335" duration="14683000" />
       <workItem from="1666107858787" duration="43496000" />
-      <workItem from="1666341426716" duration="21568000" />
+      <workItem from="1666341426716" duration="24420000" />
     </task>
     <servers />
   </component>
