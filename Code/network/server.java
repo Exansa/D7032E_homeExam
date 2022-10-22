@@ -11,8 +11,15 @@ import java.util.ArrayList;
 public class server {
     private ArrayList<Players> players;
 
-    public server(ArrayList<Players> players){
+    public server(ArrayList<Players> players, int bots) throws IOException {
         this.players = players;
+        if(players.size() + bots < 2 || players.size() +bots > 5) {
+            networkClient_start.newSocket = new ServerSocket(2048);
+            players.add(new logic.Player(0, false, null, null, null));
+            for (int i = 0; i < bots; i++) {
+                players.add(new logic.Player(i + 1, true, null, null, null));
+            }
+        }
     }
 
     public void connectToClient() throws IOException{

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5853267d-58ee-4a22-8616-327b8a7916f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Code/menu/controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/network/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/network/server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/D7032E_homeExam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/D7032E_homeExam.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +45,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/magnu/Desktop/json-20140107.jar",
+    "last_opened_file_path": "C:/Users/magnu/Desktop/jar_files/json-20220924.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.fileTypes"
@@ -71,6 +70,8 @@
       <workItem from="1665399488335" duration="14683000" />
       <workItem from="1666107858787" duration="43496000" />
       <workItem from="1666341426716" duration="24420000" />
+      <workItem from="1666425774241" duration="110000" />
+      <workItem from="1666425894699" duration="10111000" />
     </task>
     <servers />
   </component>
