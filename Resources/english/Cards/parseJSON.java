@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+import org.json.JSONObject;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -21,7 +22,7 @@ public class parseJSON {
             return new JSONObject(objText);
 
         } catch(FileNotFoundException Error){
-            System.out.println("The given card file was incorrect");
+            System.out.println("The given card file was incorrect" + Error);
         }
         return null;
     }

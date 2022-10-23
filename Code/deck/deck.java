@@ -1,13 +1,16 @@
 package Code.deck;
 
+import Code.logic.player;
 import Resources.english.Cards.baseCards;
 import Resources.english.Cards.base.*;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class deck {
 
+    private ArrayList<player> players;
     public static ArrayList<deck> cards = new ArrayList<deck>();
     public boolean nope = false;
     // ArrayList<Deck> deck = new ArrayList<Deck>();

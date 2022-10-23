@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class gameState {
-    private ArrayList<Players> players;
+    private ArrayList<player> players;
     public static int dead;
     private Scanner scanner;
 
@@ -32,7 +32,7 @@ public class gameState {
         }
     }
 
-    private void nextPlayer(ArrayList<Players> currentPlayer){
+    private void nextPlayer(ArrayList<player> currentPlayer){
         if(attack > 0){
             this.currentPlayer = currentPlayer;
         } else{
@@ -51,7 +51,7 @@ public class gameState {
         endTurn(true);
     }
 
-    public void kill(ArrayList<Players> targetPlayer){
+    public void kill(ArrayList<player> targetPlayer){
         dead++;
         this.player.setIsAlive(false);
     }

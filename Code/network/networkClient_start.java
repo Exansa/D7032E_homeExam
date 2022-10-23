@@ -6,10 +6,10 @@ import java.net.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class networkClient_start {
-    private ClientConnection clientConnection;
+    private networkClient client;
 
     public networkClient_start(boolean bot) throws IOException{
-        clientConnection = new ClientConnection(bot);
+        client = new networkClient(bot);
         connectToNetwork();
     }
 
@@ -19,14 +19,14 @@ public class networkClient_start {
 
         try{
             Socket newSocket = new Socket("localhost", 2048);
-            DataOutputStream outputNetwork = new DataOutputStream(newSocket.getOutputStream());
-            BufferedReader inputNetwork = new BufferedReader(new InputStreamReader(newSocket.getInputStream()));
-            clientName = inputNetwork.readLine();
+            DataOutputStream outFromServer = new DataOutputStream(newSocket.getOutputStream());
+            BufferedReader inFromServer = new BufferedReader(new InputStreamReader(newSocket.getInputStream()));
+            clientName = inFromServer.readLine();
             System.out.println("Connection established");
-            clientConnection.serverCommunication(random, outputNetwork, inputNetwork);
+            client.serverCommunication(random, outFromServer, inFromServer);
 
-        } catch(IOException error){
-            System.out.println("Error: Could not establish a connection" + error);
+        } catch(IOException Error){
+            System.out.println("Error: Could not establish a connection" + Error);
         }
     }
 

@@ -1,5 +1,7 @@
 package Code.network;
 
+import Code.logic.player;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -9,7 +11,8 @@ import java.net.Socket;
 import java.util.ArrayList;
 
 public class server {
-    private ArrayList<Players> players;
+    private ArrayList<player> players;
+
 
     public server(ArrayList<Players> players, int bots) throws IOException {
         this.players = players;
