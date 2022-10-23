@@ -1,8 +1,13 @@
 package Resources.english.Cards.base;
 
-import Resources.english.Cards.catCards;
+import Resources.english.Cards.card;
 
-public class TacoCatCard implements catCards {
+public class TacoCatCard implements card {
+
+    @Override
+    public void play() {
+
+    }
 
     @Override
     public String getName() {

@@ -1,8 +1,13 @@
 package Resources.english.Cards.base;
 
-import Resources.english.Cards.catCards;
+import Resources.english.Cards.card;
 
-public class HairyPotatoCatCard implements catCards {
+public class HairyPotatoCatCard implements card {
+
+    @Override
+    public void play() {
+
+    }
 
     @Override
     public String getName() {

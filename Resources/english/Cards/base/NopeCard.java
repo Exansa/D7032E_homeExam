@@ -10,7 +10,7 @@ public class NopeCard implements card {
 
     @Override
     public void play() {
-        deck.nope = true;
+
     }
 
     @Override
