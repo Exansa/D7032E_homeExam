@@ -56,7 +56,7 @@ public class deck {
         }
 
 
-
+    Collections.shuffle(this.deck);
     }
 
 
@@ -68,8 +68,8 @@ public class deck {
 
     }
 
-    public static void drawCard(){
-
+    public card drawCard(){
+        return this.deck.remove(0);
     }
 
     public String getCard(int deckIndex){

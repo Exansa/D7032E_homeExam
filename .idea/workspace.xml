@@ -8,18 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/logic/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/NopeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/NopeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/baseCards.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/cardAmounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/cardAmounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/catCards.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/deckAmount.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/parseJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/logic/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/network/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/network/server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +74,7 @@
       <workItem from="1666107858787" duration="43496000" />
       <workItem from="1666341426716" duration="24420000" />
       <workItem from="1666425774241" duration="110000" />
-      <workItem from="1666425894699" duration="22664000" />
+      <workItem from="1666425894699" duration="26655000" />
     </task>
     <servers />
   </component>

@@ -1,17 +1,21 @@
 package Code.logic;
 
+import Resources.english.Cards.card;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
 
 public class player {
-    private ArrayList<Hand> hand = new ArrayList<Hand>();
-    private boolean isAlive;
+    private ArrayList<card> hand = new ArrayList<card>();
     private String name;
+    private int ID;
     private Socket connection;
     private BufferedReader inFromClient;
     private DataOutputStream outToClient;
+    private boolean isAlive;
+
 
     public player(String name){
         this.name = name;
@@ -24,13 +28,13 @@ public class player {
     }
 
     public String cardsToString() {
-        String returnString = "";
+        String handMessage = "";
         if (hand.size() == 0)
             return "[NO CARDS]:";
         for (int i = 0; i < hand.size(); i++) {
-            returnString += "\t[" + i + "] " + hand.get(i) + ":";
+            handMessage += "\t[" + i + "] " + hand.get(i) + ":";
         }
-        return returnString;
+        return handMessage;
     }
 
     public void setName(String name){
@@ -71,5 +75,9 @@ public class player {
 
     public boolean getIsAlive() {
         return this.isAlive;
+    }
+
+    public int getID(){
+        return ID;
     }
 }

@@ -11,10 +11,10 @@ public class Hand {
 
     }
 
-    public void displayHand (ArrayList<Hand> hand){//Borde verkligen vara i menu eller i hand(ifall jag skapar hadn)
+    public void displayHand (ArrayList<player> user){//Borde verkligen vara i menu eller i hand(ifall jag skapar hadn)
         String temp = "";
         for(int i = 0;i<hand.size();i++){
-            temp = hand.get(i).getName() + " ,";
+            temp =+ hand.get(i).getName() + " ,";
 
         }
     }

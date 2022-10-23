@@ -14,7 +14,7 @@ public class server {
     private ArrayList<player> players;
 
 
-    public server(ArrayList<Players> players, int bots) throws IOException {
+    public server(ArrayList<player> players, int bots) throws IOException {
         this.players = players;
         if(players.size() + bots < 2 || players.size() +bots > 5) {
             networkClient_start.newSocket = new ServerSocket(2048);

@@ -10,7 +10,7 @@ public class ExplodeCard implements card{
     private ArrayList<player> players;
     @Override
     public void play() {
-        new gameState.kill(this.players);
+        new gameState.kill();
     }
 
     @Override
