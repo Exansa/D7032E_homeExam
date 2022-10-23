@@ -61,6 +61,7 @@ public class deck {
 
 
     public void shuffleDeck(){
+
         Collections.shuffle(this.deck);
     }
 

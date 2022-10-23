@@ -1,5 +1,6 @@
 package Resources.english.Cards.base;
 
+import Code.logic.gameState;
 import Resources.english.Cards.card;
 import Code.deck.deck;
 
@@ -7,11 +8,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class ShuffleCard implements card {
-    ArrayList<deck> deck = new ArrayList<deck>();
 
     @Override
-    public void play() {
-        Collections.shuffle(this.deck);
+    public void play(gameState state) {
+        deck.shuffleDeck();
     }
 
     @Override

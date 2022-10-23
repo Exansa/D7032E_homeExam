@@ -6,8 +6,9 @@ import Resources.english.Cards.card;
 
 public class SkipCard implements card{
     @Override
-    public void play() {
-        gameState.endTurn(false);
+    public void play(gameState state) {
+
+        state.endTurn(false);
     }
 
     @Override

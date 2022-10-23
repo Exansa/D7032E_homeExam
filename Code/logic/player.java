@@ -41,8 +41,8 @@ public class player {
         this.name = name;
     }
 
-    public void setIsAlive(boolean status){
-        this.isAlive = status;
+    public void setIsAlive(){
+        this.isAlive = !(this.isAlive);
     }
 
     public void setConnection(Socket socket){

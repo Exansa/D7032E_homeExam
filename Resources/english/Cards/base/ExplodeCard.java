@@ -9,8 +9,12 @@ import java.util.ArrayList;
 public class ExplodeCard implements card{
     private ArrayList<player> players;
     @Override
-    public void play() {
-        new gameState.kill();
+    public void play(gameState state) {
+        if(this.players.get(0).getDefuse()){
+
+            state.kill();
+        }
+
     }
 
     @Override

@@ -13,10 +13,11 @@ public class gameState {
     private int extraTurn;
     private boolean isAlive;
     private deck currentDeck;
+    private player currentPlayer;
 
 
     public gameState(int playerAmount){
-        this.players = players;
+        this.players = new ArrayList<>();
         this.currentDeck = new deck(playerAmount);
         gameStart();
     }
@@ -28,22 +29,22 @@ public class gameState {
 
     public void endTurn(boolean draw){
         if(draw){
-            currentDeck.drawCard();
+            this.currentDeck.drawCard();
             Collections.rotate(this.players, 1);
             nextPlayer();
         } else if (!draw){
             nextPlayer();
-            card card = currentDeck.drawCard();
+            card card = this.currentDeck.drawCard();
         }
     }
 
     private void nextPlayer(){
         if(extraTurn > 0){
-            this.players.get(0);
+            this.currentPlayer = this.players.get(0);
             extraTurn--;
         } else{
             Collections.rotate(players, -1);
-            this.players.get(0);
+            this.currentPlayer = this.players.get(0);
         }
     }
     public void playerTurn(){
@@ -58,8 +59,8 @@ public class gameState {
     }
 
     public void kill(){
+        this.currentPlayer.setIsAlive();
         dead++;
-        this.players.get(0).setIsAlive(false);
     }
     public void hasWon(){
         if(dead<=players.size()){
