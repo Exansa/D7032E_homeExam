@@ -5,26 +5,42 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 import org.json.JSONObject;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 
 public class parseJSON {
     int nope;
+    JSONObject json;
 
+    public static JSONObject parseCards(String expansion) throws FileNotFoundException{
 
-    public static JSONObject parseBaseCards(String path) throws FileNotFoundException{
-        File file = new File(path);
+        JSONParser parser = new JSONParser();
+
         try {
-            JSONObject obj = new JSONObject();
-            String objText = obj.toString();
+            if (expansion == "base"){
+                Object obj = parser.parse(new FileReader("deckAmount.json"));
+                JSONObject jsonObject = (JSONObject) obj;
+                return new JSONObject(jsonObject);
+                File file = new File("deckAmount.json");
+            } else if (expansion == "barking") {
+                System.out.println("Not implemented yet, defaults to base game");
+                File file = new File("deckAmount.json");
+            } else if (expansion == "imploding") {
+                System.out.println("Not implemented yet, defaults to base game");
+                File file = new File("deckAmount.json");
+            } else if (expansion == "streaking"){
+                System.out.println("Not implemented yet, defaults to base game");
+                File file = new File("deckAmount.json");
+            }
 
-            return new JSONObject(objText);
+
+            return new JSONObject(jsonObject);
 
         } catch(FileNotFoundException Error){
             System.out.println("The given card file was incorrect" + Error);
         }
         return null;
+
+
     }
 
 
