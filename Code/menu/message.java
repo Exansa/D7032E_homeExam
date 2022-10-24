@@ -13,11 +13,11 @@ public class message {
         this.players = players;
         this.scanner = scanner;
     }
-    public String sendMessage(String name,String message){
+    public String sendMessage(int targetID,String message){
         String tempMessage = "";
         int playerIndex = 0;
         for(int i = 0; i < this.players.size();i++){
-            if(this.players.get(i).getName() == name){
+            if(this.players.get(i).getPlayerID() == targetID){
                 playerIndex = i;
                 break;
             }

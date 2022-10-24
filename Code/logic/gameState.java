@@ -1,6 +1,8 @@
 package Code.logic;
 
 import Code.deck.deck;
+import Resources.english.Cards.base.DefuseCard;
+import Resources.english.Cards.base.ExplodeCard;
 import Resources.english.Cards.card;
 
 import java.util.ArrayList;
@@ -29,6 +31,9 @@ public class gameState {
     public void endTurn(boolean draw){
         if(draw){
             this.currentDeck.drawCard();
+            if(this.currentPlayer.getHand().get(0) instanceof ExplodeCard){
+                this.card.play(this.state, );
+            }
             Collections.rotate(this.players, 1);
             nextPlayer();
         } else if (!draw){
