@@ -5,26 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5853267d-58ee-4a22-8616-327b8a7916f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Code/menu/message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/network/client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/logic/Hand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/logic/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/network/networkClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/network/networkClient_start.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/network/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/network/server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/AttackCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/AttackCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/DefuseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/DefuseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/FavorCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/FavorCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/NopeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/NopeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/SeeTheFutureCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/SeeTheFutureCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ShuffleCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/ShuffleCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/SkipCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/card.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +75,7 @@
       <workItem from="1666107858787" duration="43496000" />
       <workItem from="1666341426716" duration="24420000" />
       <workItem from="1666425774241" duration="110000" />
-      <workItem from="1666425894699" duration="40450000" />
+      <workItem from="1666425894699" duration="56353000" />
     </task>
     <servers />
   </component>

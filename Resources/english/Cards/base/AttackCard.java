@@ -8,7 +8,8 @@ public class AttackCard implements card{
 
     @Override
     public void play(gameState state, String text) {
-        state.addExtraTurn(2, text);
+        int targetID = Integer.parseInt(text);
+        state.addExtraTurn(2, targetID);
         state.endTurn(false);
     }
 

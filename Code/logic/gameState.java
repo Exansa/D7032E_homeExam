@@ -71,9 +71,9 @@ public class gameState {
         return this.currentDeck.getIndex(index);
     }
 
-    public void addExtraTurn(int amount, String target){
+    public void addExtraTurn(int amount, int targetID){
         for(int i = 0; i < this.players.size();i++) {
-            if(this.players.get(i).getName() == target){
+            if(this.players.get(i).getPlayerID() == targetID){
                 this.players.get(i).setExtraTurn(2);
             }
         }
@@ -83,7 +83,7 @@ public class gameState {
         if(dead==(players.size()-1)){
             for(int i = 0; i < players.size();i++){
                 if(this.players.get(i).getIsAlive()){
-                    System.out.print("Congratulations "+ this.players.get(0).getName() +" you won!" );
+                    System.out.print("Congratulations "+ this.players.get(0).getPlayerID() +" you won!" );
                     System.exit(0);
                 }
             }

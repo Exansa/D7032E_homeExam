@@ -3,20 +3,30 @@ package Code.logic;
 import Resources.english.Cards.card;
 
 
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
 import java.util.ArrayList;
 
 public class player {
     private ArrayList<card> hand = new ArrayList<card>();
-    private String name;
+    private int playerID;
+    private boolean bot;
     int extraTurn;
     private boolean isAlive;
+    private ObjectInputStream inFromClient;
+    private ObjectOutputStream outToClient;
 
 
-    public player(String name){
-        this.name = name;
+
+    public player(int playerID, boolean bot, Socket connection, ObjectInputStream inFromClient, ObjectOutputStream outToClient){
+        this.playerID = playerID;
+        this.bot = bot;
+        this.inFromClient = inFromClient;
+        this.outToClient = outToClient;
+
         this.isAlive = true;
         this.extraTurn = 0;
-
         this.hand = new ArrayList<>();
     }
 
@@ -58,23 +68,31 @@ public class player {
         this.extraTurn = extraTurn;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-
     public void setIsAlive(){
         this.isAlive = !(this.isAlive);
     }
 
-    public String getName(){
-        return this.name;
+    public void setInFromClient(ObjectInputStream inFromClient) {
+        this.inFromClient = inFromClient;
     }
-    public int getExtraTurn(){
-        return this.extraTurn;
+
+    public void setOutToClient(ObjectOutputStream outToClient) {
+        this.outToClient = outToClient;
+    }
+
+    public int getPlayerID(){
+        return this.playerID;
     }
 
     public boolean getIsAlive() {
         return this.isAlive;
     }
 
+    public ObjectOutputStream getOutToClient() {
+        return outToClient;
+    }
+
+    public ObjectInputStream getInFromClient() {
+        return inFromClient;
+    }
 }

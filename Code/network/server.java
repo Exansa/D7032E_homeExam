@@ -2,46 +2,33 @@ package Code.network;
 
 import Code.logic.player;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 
 public class server {
     private ArrayList<player> players;
-
-
-    public server(ArrayList<player> players, int bots) throws IOException {
-        this.players = players;
-        if(players.size() + bots < 2 || players.size() +bots > 5) {
-            networkClient_start.newSocket = new ServerSocket(2048);
-            players.add(new logic.Player(0, false, null, null, null));
-            for (int i = 0; i < bots; i++) {
-                players.add(new logic.Player(i + 1, true, null, null, null));
-            }
+    private Socket socket;
+    private ServerSocket serverSocket;
+    public void server(int numberPlayers, int numberOfBots) throws Exception {
+        if(numberPlayers+numberOfBots>5){
+            //går ej
         }
-    }
-
-    public void connectToClient() throws IOException{
-        try{
-            ServerSocket serverSocket = new ServerSocket(2048);
-            for(int clients = 0; clients < 5;clients++){
-                Socket clientSocket = serverSocket.accept();
-                BufferedReader inFromClient = new BufferedReader(
-                    new InputStreamReader(serverSocket.getInputStream()));
-                DataOutputStream outToClient = new DataOutputStream(serverSocket.getOutputStream());
-                outToClient.writeBytes("You are player" + this.players.get(clients).getID());
-
-                this.players.get(clients).setConnection(clientSocket);
-                this.players.get(clients).setInFromClient(inFromClient);
-                this.players.get(clients).setOutToClient(outToClient);
-            }
-
-        } catch (IOException Error){
-            System.out.println("Error: Connection was not established" + Error);
+        players.add(new player(0, false, null, null, null)); //add this instance as a player
+        //Open for connections if there are online players
+        for(int i=0; i<numberOfBots; i++) {
+            players.add(new player(i+1, true, null, null, null)); //add a bot
+        }
+        if(numberPlayers>1)
+            serverSocket = new ServerSocket(2048);
+        for(int i=numberOfBots+1; i<numberPlayers+numberOfBots; i++) {
+            Socket connectionSocket = serverSocket.accept();
+            ObjectInputStream inFromClient = new ObjectInputStream(connectionSocket.getInputStream());
+            ObjectOutputStream outToClient = new ObjectOutputStream(connectionSocket.getOutputStream());
+            players.add(new player(i, false, connectionSocket, inFromClient, outToClient)); //add an online client
+            System.out.println("Connected to player " + i);
+            outToClient.writeObject("You connected to the server as player " + i + "\n");
         }
     }
 }
