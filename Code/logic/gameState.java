@@ -15,6 +15,7 @@ public class gameState {
     private boolean isAlive;
     private deck currentDeck;
     private player currentPlayer;
+    private gameState state;
 
 
     public gameState(int playerAmount){
@@ -32,7 +33,7 @@ public class gameState {
         if(draw){
             this.currentDeck.drawCard();
             if(this.currentPlayer.getHand().get(0) instanceof ExplodeCard){
-                this.card.play(this.state, );
+                this.currentPlayer.getHand().get(0).play(state, null);
             }
             Collections.rotate(this.players, 1);
             nextPlayer();

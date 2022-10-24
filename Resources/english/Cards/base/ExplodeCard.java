@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class ExplodeCard implements card{
     @Override
     public void play(gameState state, String text) {
-
+        if()
     }
 
     @Override
