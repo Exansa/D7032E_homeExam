@@ -35,7 +35,7 @@ public class server {
                 DataOutputStream outToClient = new DataOutputStream(serverSocket.getOutputStream());
                 outToClient.writeBytes("You are player" + this.players.get(clients).getID());
 
-                this.players.get(clients).setConnection(serverSocket);
+                this.players.get(clients).setConnection(clientSocket);
                 this.players.get(clients).setInFromClient(inFromClient);
                 this.players.get(clients).setOutToClient(outToClient);
             }

@@ -9,8 +9,10 @@ import java.util.ArrayList;
 public class SeeTheFutureCard implements card {
 
     @Override
-    public void play(gameState state) {
-        System.out.print("The next cards are" + (deck.deck.get(0)) + "," + (deck.deck.get(1)) + "," + (deck.deck.get(2)));
+    public void play(gameState state, String text) {
+        System.out.print("The next cards are" + (state.getCard(0).getName()) + ","
+                                              + (state.getCard(1).getName()) + ","
+                                              + (state.getCard(2)));
     }
 
     @Override

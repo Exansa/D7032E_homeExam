@@ -1,11 +1,12 @@
 package Resources.english.Cards.base;
 
+import Code.logic.gameState;
 import Resources.english.Cards.card;
 
 public class BikiniCatCard implements card {
 
     @Override
-    public void play() {
+    public void play(gameState state, String text) {
 
     }
 

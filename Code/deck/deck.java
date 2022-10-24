@@ -10,67 +10,68 @@ import java.util.Collections;
 import java.util.HashMap;
 
 public class deck {
-
-    private ArrayList<player> players;
-    public static ArrayList<card> deck = new ArrayList<card>();
+    private ArrayList<card> cards;
     public boolean nope = false;
 
 
     public deck(int playerAmount){
-        this.deck = new ArrayList<>();
+        this.cards = new ArrayList<>();
         String expansion = "base";
         HashMap<String, Integer> cardList = cardAmounts.cardAmount(expansion);
 
         for(int i = 0; 0<cardList.get("nope");i++){
-            this.deck.add(new NopeCard());}
+            this.cards.add(new NopeCard());}
 
         for(int i = 0; 0<cardList.get("shuffle");i++){
-            this.deck.add(new ShuffleCard());}
+            this.cards.add(new ShuffleCard());}
 
         for(int i = 0; 0<cardList.get("seeTheFuture");i++){
-            this.deck.add(new SeeTheFutureCard());}
+            this.cards.add(new SeeTheFutureCard());}
 
         for(int i = 0; 0<cardList.get("favor");i++){
-            this.deck.add(new FavorCard());}
+            this.cards.add(new FavorCard());}
 
         for(int i = 0; 0<cardList.get("hairypotato");i++){
-            this.deck.add(new HairyPotatoCatCard())}
+            this.cards.add(new HairyPotatoCatCard());}
 
         for(int i = 0; 0<cardList.get("catterMelon");i++){
-            this.deck.add(new CattermelonCatCard());}
+            this.cards.add(new CattermelonCatCard());}
 
         for(int i = 0; 0<cardList.get("rainbow");i++){
-            this.deck.add(new RainbowCatCard());}
+            this.cards.add(new RainbowCatCard());}
 
         for(int i = 0; 0<cardList.get("taco");i++){
-            this.deck.add(new TacoCatCard());}
+            this.cards.add(new TacoCatCard());}
 
         for(int i = 0; 0<cardList.get("bikini");i++){
-            this.deck.add(new BikiniCatCard());}
+            this.cards.add(new BikiniCatCard());}
 
         for(int i = 0; 0<(6 - playerAmount); i++){
-            this.deck.add(new DefuseCard());}
+            this.cards.add(new DefuseCard());}
 
         for(int i = 0; 0<(playerAmount-1); i++){
-            this.deck.add(new ExplodeCard());
+            this.cards.add(new ExplodeCard());
         }
 
 
-    Collections.shuffle(this.deck);
+    Collections.shuffle(this.cards);
     }
 
 
     public void shuffleDeck(){
 
-        Collections.shuffle(this.deck);
+        Collections.shuffle(this.cards);
     }
 
     public void insertCard(int deckIndex){
 
     }
 
+    public card getIndex(int index){
+        return this.cards.get(index);
+    }
     public card drawCard(){
-        return this.deck.remove(0);
+        return this.cards.remove(0);
     }
 
     public String getCard(int deckIndex){
@@ -78,4 +79,5 @@ public class deck {
         //import card name
         return(cardName);
     }
+
 }

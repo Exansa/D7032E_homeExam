@@ -10,8 +10,8 @@ import java.util.Collections;
 public class ShuffleCard implements card {
 
     @Override
-    public void play(gameState state) {
-        deck.shuffleDeck();
+    public void play(gameState state, String text) {
+        state.shuffleCurrentDeck();
     }
 
     @Override

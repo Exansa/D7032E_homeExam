@@ -6,7 +6,7 @@ import Resources.english.Cards.card;
 public class FavorCard implements card {
 
     @Override
-    public void play(gameState state) {
+    public void play(gameState state, String text) {
 
     }
 

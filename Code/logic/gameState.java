@@ -5,7 +5,6 @@ import Resources.english.Cards.card;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class gameState {
     private ArrayList<player> players;
@@ -48,8 +47,8 @@ public class gameState {
         }
     }
     public void playerTurn(){
-        hasWon();
         if(this.players.get(0).getIsAlive()){
+            hasWon();
             //call controller here
         } else {
             System.out.print("You are dead and your turn will be skipped");
@@ -62,11 +61,29 @@ public class gameState {
         this.currentPlayer.setIsAlive();
         dead++;
     }
+
+    public void shuffleCurrentDeck() {
+        this.currentDeck.shuffleDeck();
+    }
+
+
+    public card getCard(int index){
+        return this.currentDeck.getIndex(index);
+    }
+
+    public void addExtraTurn(int amount, String target){
+        for(int i = 0; i < this.players.size();i++) {
+            if(this.players.get(i).getName() == target){
+                this.players.get(i).setExtraTurn(2);
+            }
+        }
+    }
+
     public void hasWon(){
-        if(dead<=players.size()){
+        if(dead==(players.size()-1)){
             for(int i = 0; i < players.size();i++){
                 if(this.players.get(i).getIsAlive()){
-                    System.out.print("Congratulations player "+ this.players.get(0).getID() +"!" );
+                    System.out.print("Congratulations "+ this.players.get(0).getName() +" you won!" );
                     System.exit(0);
                 }
             }

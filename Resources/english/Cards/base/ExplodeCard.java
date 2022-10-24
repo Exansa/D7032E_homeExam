@@ -7,13 +7,8 @@ import Resources.english.Cards.card;
 import java.util.ArrayList;
 
 public class ExplodeCard implements card{
-    private ArrayList<player> players;
     @Override
-    public void play(gameState state) {
-        if(this.players.get(0).getDefuse()){
-
-            state.kill();
-        }
+    public void play(gameState state, String text) {
 
     }
 

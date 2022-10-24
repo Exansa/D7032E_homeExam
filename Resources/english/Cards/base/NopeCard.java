@@ -10,7 +10,7 @@ public class NopeCard implements card {
 
 
     @Override
-    public void play(gameState state) {
+    public void play(gameState state, String text) {
     }
 
     @Override
