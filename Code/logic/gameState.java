@@ -26,7 +26,6 @@ public class gameState {
 
     private void gameStart(){
         dead = 0;
-
     }
 
     public void endTurn(boolean draw){
@@ -68,6 +67,10 @@ public class gameState {
         dead++;
     }
 
+    public player getCurrentPlayer() {
+        return this.currentPlayer;
+    }
+
     public void shuffleCurrentDeck() {
         this.currentDeck.shuffleDeck();
     }
@@ -85,6 +88,14 @@ public class gameState {
         }
     }
 
+    public player targetPlayer(int targetID){
+        for(int i = 0; i < this.players.size();i++){
+            if(this.players.get(i).getPlayerID() == targetID){
+                return this.players.get(i);
+            }
+        }
+        return null;
+    }
     public void hasWon(){
         if(dead==(players.size()-1)){
             for(int i = 0; i < players.size();i++){

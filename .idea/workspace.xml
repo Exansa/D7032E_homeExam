@@ -7,7 +7,10 @@
     <list default="true" id="5853267d-58ee-4a22-8616-327b8a7916f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/logic/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/menu/message.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/menu/message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/FavorCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/Cards/base/FavorCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <workItem from="1666107858787" duration="43496000" />
       <workItem from="1666341426716" duration="24420000" />
       <workItem from="1666425774241" duration="110000" />
-      <workItem from="1666425894699" duration="60988000" />
+      <workItem from="1666425894699" duration="65816000" />
     </task>
     <servers />
   </component>

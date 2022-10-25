@@ -13,18 +13,12 @@ public class message {
         this.players = players;
         this.scanner = scanner;
     }
-    public String sendMessage(int targetID,String message){
+    public String sendMessage(player target,Object message){
         String tempMessage = "";
-        int playerIndex = 0;
-        for(int i = 0; i < this.players.size();i++){
-            if(this.players.get(i).getPlayerID() == targetID){
-                playerIndex = i;
-                break;
-            }
-        }
-        player recipient = players.get(playerIndex);
+        player recipient = target;
+
         try{
-            recipient.getOutToClient().writeBytes(message);
+            recipient.getOutToClient().writeObject(message);
             tempMessage = recipient.getInFromClient().readLine();
         } catch(Exception e){
         }

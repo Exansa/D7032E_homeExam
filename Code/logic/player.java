@@ -58,6 +58,7 @@ public class player {
     public boolean getDefuse(){
         for(int i = 0; i < this.hand.size();i++){
             if(this.hand.get(i).getName() == "defuse"){
+                this.hand.remove(i);
                 return true;
             }
         }
