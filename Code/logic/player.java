@@ -55,14 +55,22 @@ public class player {
     public ArrayList<card> getHand(){
         return this.hand;
     }
-    public boolean getDefuse(){
+    public boolean getDefuse() {
+        int cardIndex = getSpecificCard("defuse");
+        if(cardIndex == -1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public int getSpecificCard(String name){
         for(int i = 0; i < this.hand.size();i++){
-            if(this.hand.get(i).getName() == "defuse"){
-                this.hand.remove(i);
-                return true;
+            if(this.hand.get(i).getName() == name){
+                return i;
             }
         }
-        return false;
+        return -1;
     }
 
     public void setExtraTurn(int extraTurn) {
