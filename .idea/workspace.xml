@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5853267d-58ee-4a22-8616-327b8a7916f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Code/deck/deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/deck/deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/logic/gameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/gameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/logic/player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/logic/player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/network/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Code/network/server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/AttackCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/AttackCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/BikiniCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/BikiniCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/CattermelonCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/CattermelonCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/DefuseCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/DefuseCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ExplodeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/ExplodeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/FavorCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/FavorCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/HairyPotatoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/HairyPotatoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/NopeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/NopeCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/RainbowCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/RainbowCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/SeeTheFutureCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/SeeTheFutureCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/ShuffleCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/ShuffleCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/SkipCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/SkipCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/base/TacoCatCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/english/base/TacoCatCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/card.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Cards/card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/english/Cards/cardAmounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Cards/cardAmounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-4.13.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ExplodingKittensTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,32 +31,36 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Ft36zDScLHCVqjWChFRl8Wlts0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/magnu/Desktop/jar_files/json-20220924.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/magnu/Desktop/jar_files/json-20220924.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\magnu\Desktop\D7032E_homeExam\documentation" />
@@ -92,7 +81,8 @@
       <workItem from="1666341426716" duration="24420000" />
       <workItem from="1666425774241" duration="110000" />
       <workItem from="1666425894699" duration="70553000" />
-      <workItem from="1666701309066" duration="26675000" />
+      <workItem from="1666701309066" duration="27346000" />
+      <workItem from="1666896504496" duration="51000" />
     </task>
     <servers />
   </component>
@@ -109,5 +99,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -13,7 +13,7 @@ public class deck {
     public boolean nope = false;
 
 
-    public deck(int playerAmount, String expansion, String language){
+    public Arraylist<card> deck(int playerAmount, String expansion, String language){
         this.cards = new ArrayList<>();
         HashMap<String, Integer> cardList = cardAmounts.cardAmount(expansion, language);
 
