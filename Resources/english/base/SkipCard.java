@@ -1,8 +1,7 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
-import Code.deck.deck;
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 
 public class SkipCard implements card{
     @Override

@@ -1,11 +1,7 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
-import Resources.english.Cards.card;
-import Code.deck.deck;
-
-import java.util.ArrayList;
-import java.util.Collections;
+import Resources.Cards.card;
 
 public class ShuffleCard implements card {
 

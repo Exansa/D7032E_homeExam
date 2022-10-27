@@ -1,9 +1,10 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 
-public class DefuseCard implements card{
+public class CattermelonCatCard implements card {
+
     @Override
     public void play(gameState state, String text) {
 
@@ -11,11 +12,13 @@ public class DefuseCard implements card{
 
     @Override
     public String getName() {
-        return "Defuse";
+
+        return "Cattermelon";
     }
 
     @Override
     public String getDescription() {
-        return "Needed to stop the exploding kitten!";
+
+        return "A juicy and cuddly hybrid! Can combo!";
     }
 }

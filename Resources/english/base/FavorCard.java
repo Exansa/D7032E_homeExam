@@ -1,12 +1,13 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
 import Code.logic.player;
 import Code.menu.message;
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 
 public class FavorCard implements card {
     private player target;
+
     @Override
     public void play(gameState state, String text) {
         int targetID = Integer.parseInt(text);

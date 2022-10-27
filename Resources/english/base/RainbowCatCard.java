@@ -1,9 +1,9 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 
-public class TacoCatCard implements card {
+public class RainbowCatCard implements card {
 
     @Override
     public void play(gameState state, String text) {
@@ -12,11 +12,11 @@ public class TacoCatCard implements card {
 
     @Override
     public String getName() {
-        return "Taco cat";
+        return "Rainbow ralphing cat";
     }
 
     @Override
     public String getDescription() {
-        return "Loves Tuesdays! Can combo!";
+        return "So fabulous! Can combo!";
     }
 }

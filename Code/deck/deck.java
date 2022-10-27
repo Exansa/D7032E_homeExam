@@ -1,9 +1,8 @@
 package Code.deck;
 
-import Code.logic.player;
-import Resources.english.Cards.base.*;
-import Resources.english.Cards.card;
-import Resources.english.Cards.cardAmounts;
+import Resources.english.base.*;
+import Resources.Cards.card;
+import Resources.Cards.cardAmounts;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,10 +13,9 @@ public class deck {
     public boolean nope = false;
 
 
-    public deck(int playerAmount){
+    public deck(int playerAmount, String expansion, String language){
         this.cards = new ArrayList<>();
-        String expansion = "base";
-        HashMap<String, Integer> cardList = cardAmounts.cardAmount(expansion);
+        HashMap<String, Integer> cardList = cardAmounts.cardAmount(expansion, language);
 
         for(int i = 0; 0<cardList.get("nope");i++){
             this.cards.add(new NopeCard());}

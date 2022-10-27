@@ -1,9 +1,7 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
-import Code.deck.deck;
 import Code.logic.gameState;
-import Code.logic.player;
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 public class AttackCard implements card{
 
     @Override

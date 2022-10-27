@@ -1,9 +1,6 @@
-package Resources.english.Cards;
+package Resources.Cards;
 
-import Code.deck.deck;
 import Code.logic.gameState;
-
-import java.util.ArrayList;
 
 public interface card {
     public void play(gameState state, String text);

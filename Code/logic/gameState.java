@@ -1,9 +1,8 @@
 package Code.logic;
 
 import Code.deck.deck;
-import Resources.english.Cards.base.DefuseCard;
-import Resources.english.Cards.base.ExplodeCard;
-import Resources.english.Cards.card;
+import Resources.english.base.ExplodeCard;
+import Resources.Cards.card;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,7 +19,7 @@ public class gameState {
 
     public gameState(int playerAmount, String expansion, String language){
         this.players = new ArrayList<>();
-        this.currentDeck = new deck(playerAmount);
+        this.currentDeck = new deck(playerAmount, expansion, language);
     }
 
     public void gameStart(){

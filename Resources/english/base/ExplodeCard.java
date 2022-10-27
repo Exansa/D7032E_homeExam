@@ -1,10 +1,7 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
-import Code.logic.player;
-import Resources.english.Cards.card;
-
-import java.util.ArrayList;
+import Resources.Cards.card;
 
 public class ExplodeCard implements card{
     @Override

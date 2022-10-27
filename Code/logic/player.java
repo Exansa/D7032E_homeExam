@@ -1,6 +1,6 @@
 package Code.logic;
 
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 
 
 import java.io.ObjectInputStream;

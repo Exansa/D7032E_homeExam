@@ -1,9 +1,9 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
 import Code.logic.gameState;
-import Resources.english.Cards.card;
+import Resources.Cards.card;
 
-public class CattermelonCatCard implements card {
+public class HairyPotatoCatCard implements card {
 
     @Override
     public void play(gameState state, String text) {
@@ -12,13 +12,11 @@ public class CattermelonCatCard implements card {
 
     @Override
     public String getName() {
-
-        return "Cattermelon";
+        return "Hairy potato cat";
     }
 
     @Override
     public String getDescription() {
-
-        return "A juicy and cuddly hybrid! Can combo!";
+        return "Hairy yet delish! Can combo!";
     }
 }

@@ -1,10 +1,7 @@
-package Resources.english.Cards.base;
+package Resources.english.base;
 
-import Code.deck.deck;
 import Code.logic.gameState;
-import Resources.english.Cards.card;
-
-import java.util.ArrayList;
+import Resources.Cards.card;
 
 public class NopeCard implements card {
 

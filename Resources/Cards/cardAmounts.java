@@ -1,19 +1,18 @@
-package Resources.english.Cards;
+package Resources.Cards;
 
-import java.io.File;
-import java.io.FileReader;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class cardAmounts {
 
-    public static HashMap<String, Integer> cardAmount(String expansion){
+    public static HashMap<String, Integer> cardAmount(String expansion, String language){
 
         HashMap<String, Integer> amounts = new HashMap<String, Integer>();
         if (expansion == "base"){
-            amounts = baseAmounts();
-            return amounts;
+            if(language == "english"){
+                amounts = baseAmounts();
+                return amounts;
+            }
+
 
         } else if (expansion == "barking") {
             System.out.println("Not implemented yet, defaults to base game");
@@ -33,6 +32,7 @@ public class cardAmounts {
         } else{
             return null;
         }
+        return null;
     }
 
     private static HashMap<String, Integer> baseAmounts(){
