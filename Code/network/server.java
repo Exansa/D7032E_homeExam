@@ -11,7 +11,7 @@ public class server {
     private ArrayList<player> players;
     private Socket socket;
     private ServerSocket serverSocket;
-    public void server(int numberPlayers, int numberOfBots) throws Exception {
+    public server(int numberPlayers, int numberOfBots,String language) throws Exception {
         if(numberPlayers+numberOfBots>5){
             //går ej
         }

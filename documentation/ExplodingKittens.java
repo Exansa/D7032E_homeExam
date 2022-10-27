@@ -1,4 +1,6 @@
-import java.util.*; 
+package documentation;
+
+import java.util.*;
 import java.io.*; 
 import java.net.*;
 import java.util.concurrent.*;

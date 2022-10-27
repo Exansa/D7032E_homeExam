@@ -18,13 +18,12 @@ public class gameState {
     private gameState state;
 
 
-    public gameState(int playerAmount){
+    public gameState(int playerAmount, String expansion, String language){
         this.players = new ArrayList<>();
         this.currentDeck = new deck(playerAmount);
-        gameStart();
     }
 
-    private void gameStart(){
+    public void gameStart(){
         dead = 0;
     }
 
