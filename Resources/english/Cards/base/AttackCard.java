@@ -9,7 +9,7 @@ public class AttackCard implements card{
     @Override
     public void play(gameState state, String text) {
         int targetID = Integer.parseInt(text);
-        state.addExtraTurn(2, targetID);
+        state.addExtraTurn(2);
         state.endTurn(false);
     }
 

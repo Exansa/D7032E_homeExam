@@ -10,7 +10,7 @@ import java.util.Collections;
 
 public class gameState {
     private ArrayList<player> players;
-    public static int dead;
+    private static int dead;
     private int extraTurn;
     private boolean isAlive;
     private deck currentDeck;
@@ -80,12 +80,8 @@ public class gameState {
         return this.currentDeck.getIndex(index);
     }
 
-    public void addExtraTurn(int amount, int targetID){
-        for(int i = 0; i < this.players.size();i++) {
-            if(this.players.get(i).getPlayerID() == targetID){
-                this.players.get(i).setExtraTurn(2);
-            }
-        }
+    public void addExtraTurn(int amount){
+                this.extraTurn += amount;
     }
 
     public player targetPlayer(int targetID){

@@ -12,7 +12,6 @@ public class player {
     private ArrayList<card> hand = new ArrayList<card>();
     private int playerID;
     private boolean bot;
-    int extraTurn;
     private boolean isAlive;
     private ObjectInputStream inFromClient;
     private ObjectOutputStream outToClient;
@@ -26,7 +25,6 @@ public class player {
         this.outToClient = outToClient;
 
         this.isAlive = true;
-        this.extraTurn = 0;
         this.hand = new ArrayList<>();
     }
 
@@ -73,9 +71,6 @@ public class player {
         return -1;
     }
 
-    public void setExtraTurn(int extraTurn) {
-        this.extraTurn = extraTurn;
-    }
 
     public void setIsAlive(){
         this.isAlive = !(this.isAlive);
